@@ -33,7 +33,7 @@
 
           $stmt->close();
       } else {
-          $error = "Database error. Please try again later.";
+          $error = "Error in database. Please try again later.";
       }
 
       closeCon($con);
