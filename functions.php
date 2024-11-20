@@ -1,10 +1,10 @@
 <?php 
 
 function openCon(){
-  $con = mysqli_connect("localhost", "root", "", "php-lesson");
+  $con = mysqli_connect("localhost", "root", "", "php-exam");
 
   if($con === false)
-    die("Error in Database could not be connect" . mysqli_connect_error());
+    die("Error Database couldn't connect" . mysqli_connect_error());
 
     return $con;
 }
@@ -27,12 +27,11 @@ function sanitizeEmail($email) {
 
 function guard() {
     if (!isset($_SESSION['email'])) {
-        header("Location: index.php");
+        header("Location: /index.php");
         exit();
     }
 }
 
 
-/* Update */
 
 ?>
