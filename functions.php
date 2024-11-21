@@ -1,7 +1,7 @@
 <?php 
 
 function openCon(){
-  $con = mysqli_connect("localhost", "root", "", "php-exam");
+  $con = mysqli_connect("localhost", "root", "", "php-lesson");
 
   if($con === false)
     die("Error Database couldn't connect" . mysqli_connect_error());
